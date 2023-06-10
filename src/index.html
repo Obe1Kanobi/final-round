@@ -4,15 +4,485 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>new site</title>
   </head>
   <body>
-    <div class="site-container">
-      <header class="header">
-        <h1 class="welcome-title">Ура! Webpack работает!</h1>
-        <h2 class="welcome-title">Ура! Webpack работает!</h2>
-        <img src="./img/8489677c51328e6c8856f189698fa08b.jpg" alt>
-      </header>
-    </div>
+    <header class="header">
+      <div class="header__logo-cont">
+        <img class="header__logo-icon" src="img/burger.webp" alt>
+        <div class="header__logo-line"></div>
+        <img class="header__logo-img" src="img/Logo.webp" alt>
+      </div>
+      <div class="header__element">
+        <div class="header__element-cont">
+          <img class="header__element-icon" src="img/call.webp" alt>
+          <img class="header__element-icon" src="img/chat.webp" alt>
+          <img class="header__element-icon" src="img/profile.webp" alt>
+        </div>
+        <div class="header__element-line"></div>
+        <div class="header__element-cont-line">
+          <img class="header__element-icon" src="img/repair.webp" alt>
+          <img class="header__element-icon" src="img/checkstatus.webp" alt>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="service"> #service
+        <div class="service__line"></div>
+        <h1 class="service__title">Услуги и сервисы</h1>
+      </section>
+      <div class="wrapper"> <!-- menu -->
+        <section class="menu">
+          <div class="swiper menu__slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Ремонтируемые бренды</div>
+              <div class="swiper-slide">Дополнительные услуги</div>
+              <div class="swiper-slide">Цены на услуги</div>
+              <div class="swiper-slide">Адреса сервисных центров</div>
+              <div class="swiper-slide">Специальные цены</div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="title"><!-- title -->
+        <p class="title__text">Мы являемся авторизованным сервисным центром по
+          ремонту техники Dell. Только у нас вы можете отремонтировать свой
+          ноутбук Dell с официальной гарантией производителя.<div class="dot"></div>
+
+          <div class="more">Мы успешно работаем с 1992 года и заслужили
+            репутацию надежного
+            партнера, что подтверждает большое количество постоянных клиентов.
+            Мы
+            гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь,
+            советуют нас родным и близким.</div></p>
+        <button class="title__button">
+          <img class="title__button-icon" src="img/icon.webp">
+          <a>Читать далее</a>
+        </button>
+        <img src="img/MG_3223.webp">
+      </section>
+      <div class="wrapper"><!-- brands -->
+        <div class="brands">
+          <div class="brands__title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕДОВ</div>
+        </div>
+        <section>
+          <div class="brands__mini">
+            <div class="swiper">
+              <div class="brands__mini-section swiper-wrapper">
+                <div class="brands__mini-cont swiper-slide">
+                  <img class="brands__mini-logo"
+                    src="img/Lenovo.webp">
+                  <img class="brands__mini-go"
+                    src="img/go.webp">
+                </div>
+                <div class="brands__mini-cont swiper-slide">
+                  <img class="brands__mini-logo"
+                    src="img/Samsung.webp">
+                  <img class="brands__mini-go"
+                    src="img/go.webp">
+                </div>
+                <div class="brands__mini-cont swiper-slide">
+                  <img class="brands__mini-logo"
+                    src="img/Apple.webp">
+                  <img class="brands__mini-go"
+                    src="img/go.webp">
+                </div>
+                <div class="brands__mini-cont swiper-slide">
+                  <img class="brands__mini-logo"
+                    src="img/View.webp">
+                  <img class="brands__mini-go"
+                    src="img/go.webp">
+                </div>
+                <div class="brands__mini-cont swiper-slide">
+                  <img class="brands__mini-logo"
+                    src="img/Bosch.webp">
+                  <img class="brands__mini-go"
+                    src="img/go.webp">
+                </div>
+                <div class="brands__mini-cont swiper-slide">
+                  <img class="brands__mini-logo"
+                    src="img/Hp.webp">
+                  <img class="brands__mini-go"
+                    src="img/go.webp">
+                </div>
+                <div class="brands__mini-cont swiper-slide">
+                  <img class="brands__mini-logo"
+                    src="img/Acer.webp">
+                  <img class="brands__mini-go"
+                    src="img/go.webp">
+                </div>
+                <div class="brands__mini-cont swiper-slide">
+                  <img class="brands__mini-logo"
+                    src="img/Sony.webp">
+                  <img class="brands__mini-go"
+                    src="img/go.webp">
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="brands__container">
+            <div class="brands__section">
+              <div class="brands__section--cont">
+                <img class="brands__section--logo"
+                  src="img/Lenovo.webp">
+                <img class="brands__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="brands__section--cont">
+                <img class="brands__section--logo"
+                  src="img/Samsung.webp">
+                <img class="brands__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="brands__section--cont">
+                <img class="brands__section--logo"
+                  src="img/Apple.webp">
+                <img class="brands__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="brands__section--cont">
+                <img class="brands__section--logo"
+                  src="img/View.webp">
+                <img class="brands__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="brands__section--cont">
+                <img class="brands__section--logo"
+                  src="img/Bosch.webp">
+                <img class="brands__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="brands__section--cont">
+                <img class="brands__section--logo"
+                  src="img/Hp.webp">
+                <img class="brands__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="brands__section--cont">
+                <img class="brands__section--logo"
+                  src="img/Acer.webp">
+                <img class="brands__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="brands__section--cont">
+                <img class="brands__section--logo"
+                  src="img/Sony.webp">
+                <img class="brands__section--go"
+                  src="img/go.webp">
+              </div>
+            </div>
+            <div class="container">
+              <div class="brands__section--cont">
+                <img class="brands__section--logo"
+                  src="img/Lenovo.webp">
+                <img class="brands__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="brands__section--cont">
+                <img class="brands__section--logo"
+                  src="img/Samsung.webp">
+                <img class="brands__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="brands__section--cont">
+                <img class="brands__section--logo"
+                  src="img/Apple.webp">
+                <img class="brands__section--go"
+                  src="img/go.webp">
+              </div>
+            </div>
+          </div>
+          <button class="button" onclick="showMore()">
+            <img class="buttonimg"
+              src="img/icon.webp">
+            <a class="buttontext">Показать все</a>
+          </button>
+        </section>
+      </div>
+      <div class="wrapper"><!-- view -->
+        <div class="view">
+          <div class="view__title">РЕМОН РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</div>
+        </div>
+        <section>
+          <div class="view__mini">
+            <div class="view__mini-swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="view__mini-cont swiper-slide">
+                  <a class="view__mini-text">
+                    Ремонт ноутбуков</a>
+                  <img class="view__mini-go"
+                    src="img/go.webp">
+                </div>
+                <div class="view__mini-cont swiper-slide">
+                  <a class="view__mini-text">
+                    Ремонт планшетов</a>
+                  <img class="view__mini-go"
+                    src="img/go.webp">
+                </div>
+                <div class="view__mini-cont swiper-slide">
+                  <a class="view__mini-text">
+                    Ремонт ПК</a>
+                  <img class="view__mini-go"
+                    src="img/go.webp">
+                </div>
+                <div class="view__mini-cont swiper-slide">
+                  <a class="view__mini-text">
+                    Ремонт мониторов</a>
+                  <img class="view__mini-go"
+                    src="img/go.webp">
+                </div>
+                <div class="view__mini-cont swiper-slide">
+                  <a class="view__mini-text">
+                    Ремонт ноутбуков</a>
+                  <img class="view__mini-go"
+                    src="img/go.webp">
+                </div>
+                <div class="view__mini-cont swiper-slide">
+                  <a class="view__mini-text">
+                    Ремонт планшетов</a>
+                  <img class="view__mini-go"
+                    src="img/go.webp">
+                </div>
+                <div class="view__mini-cont swiper-slide">
+                  <a class="view__mini-text">
+                    Ремонт ПК</a>
+                  <img class="view__mini-go"
+                    src="img/go.webp">
+                </div>
+                <div class="view__mini-cont swiper-slide">
+                  <a class="view__mini-text">
+                    Ремонт мониторов</a>
+                  <img class="view__mini-go"
+                    src="img/go.webp">
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="view__container">
+            <div class="view__section">
+              <div class="view__section--cont">
+                <img class="view__section--text"
+                  src="img/Lenovo.webp">
+                <img class="view__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="view__section--cont">
+                <img class="view__section--text"
+                  src="img/Samsung.webp">
+                <img class="view__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="view__section--cont">
+                <img class="view__section--text"
+                  src="img/Apple.webp">
+                <img class="view__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="view__section--cont">
+                <img class="view__section--text"
+                  src="img/View.webp">
+                <img class="view__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="view__section--cont">
+                <img class="view__section--text"
+                  src="img/Bosch.webp">
+                <img class="view__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="view__section--cont">
+                <img class="view__section--text"
+                  src="img/Hp.webp">
+                <img class="view__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="view__section--cont">
+                <img class="view__section--text"
+                  src="img/Acer.webp">
+                <img class="view__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="view__section--cont">
+                <img class="view__section--text"
+                  src="img/Sony.webp">
+                <img class="view__section--go"
+                  src="img/go.webp">
+              </div>
+            </div>
+            <div class="vies__section-container">
+              <div class="view__section--cont">
+                <img class="view__section--text"
+                  src="img/Lenovo.webp">
+                <img class="view__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="view__section--cont">
+                <img class="view__section--text"
+                  src="img/Samsung.webp">
+                <img class="view__section--go"
+                  src="img/go.webp">
+              </div>
+              <div class="view__section--cont">
+                <img class="view__section--text"
+                  src="img/Apple.webp">
+                <img class="view__section--go"
+                  src="img/go.webp">
+              </div>
+            </div>
+          </div>
+          <button class="button" onclick="showMore()">
+            <img class="buttonimg"
+              src="img/icon.webp">
+            <a class="buttontext">Показать все</a>
+          </button>
+        </section>
+      </div>
+      <div class="wrapper"><!-- services -->
+        <div class="services">
+          <div class="services__title">ЦЕНЫ НА УСЛУГИ</div>
+        </div>
+        <section>
+          <div class="services__mini">
+            <div class="services__mini-swiper swiper">
+              <div class="services__mini-section swiper-wrapper">
+                <div class="services__mini-cont swiper-slide">
+                  <div class="services__mini-text">
+                    <div>
+                      <a class="services__mini-text-title">Ремонтные услуги</a><br>
+                      <a class="services__mini-text-titler">Диагностика</a>
+                    </div>
+                    <div>
+                      <a class="services__mini-text-title">Цена</a><br>
+                      <a class="services__mini-text-titler">Бесплатно</a>
+                    </div>
+                    <div class="services__mini-term">
+                      <a class="services__mini-text-title">Срок</a><br>
+                      <a class="services__mini-text-titler">30 мин</a>
+                      <button class="services__mini-button"><a
+                          class="services__mini-button-text">ЗАКАЗАТЬ</a>
+                        <img src="img/dropdown.webp">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class=" services__mini-cont swiper-slide">
+                  <div class="services__mini-text">
+                    <div>
+                      <a class="services__mini-text-title">Ремонтные услуги</a><br>
+                      <a class="services__mini-text-titler">Замена дисплея</a>
+                    </div>
+                    <div>
+                      <a class="services__mini-text-title">Цена</a><br>
+                      <a class="services__mini-text-titler">1 000 ₽</a>
+                    </div>
+                    <div class="services__mini-term">
+                      <a class="services__mini-text-title">Срок</a><br>
+                      <a class="services__mini-text-titler">30-120 мин</a>
+                      <button class="services__mini-button"><a
+                          class="services__mini-button-text">ЗАКАЗАТЬ</a>
+                        <img src="img/dropdown.webp">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="services__mini-cont swiper-slide">
+                  <div class="services__mini-text">
+                    <div>
+                      <a class="services__mini-text-title">Ремонтные услуги</a><br>
+                      <a class="services__mini-text-titler">Замена
+                        полифонического динамика</a>
+                    </div>
+                    <div>
+                      <a class="services__mini-text-title">Цена</a><br>
+                      <a class="services__mini-text-titler">1 000 ₽</a>
+                    </div>
+                    <div class="services__mini-term">
+                      <a class="services__mini-text-title">Срок</a><br>
+                      <a class="services__mini-text-titler">30-120 мин</a>
+                      <button class="services__mini-button"><a
+                          class="services__mini-button-text">ЗАКАЗАТЬ</a>
+                        <img src="img/dropdown.webp">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="services__mini-cont swiper-slide">
+                  <div class="services__mini-text">
+                    <div>
+                      <a class="services__mini-text-title">Ремонтные услуги</a><br>
+                      <a class="services__mini-text-titler">Тестирование с
+                        выдачей технического заключения</a>
+                    </div>
+                    <div>
+                      <a class="services__mini-text-title">Цена</a><br>
+                      <a class="services__mini-text-titler">1 000 ₽</a>
+                    </div>
+                    <div class="services__mini-term">
+                      <a class="services__mini-text-title">Срок</a><br>
+                      <a class="services__mini-text-titler">30-120 мин</a>
+                      <button class="services__mini-button"><a
+                          class="services__mini-button-text">ЗАКАЗАТЬ</a>
+                        <img src="img/dropdown.webp">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="services__mini-cont swiper-slide">
+                  <div class="services__mini-text">
+                    <div>
+                      <a class="services__mini-text-title">Ремонтные услуги</a><br>
+                      <a class="services__mini-text-titler">Замена программного
+                        обеспечения</a>
+                    </div>
+                    <div>
+                      <a class="services__mini-text-title">Цена</a><br>
+                      <a class="services__mini-text-titler">1 000 ₽</a>
+                    </div>
+                    <div class="services__mini-term">
+                      <a class="services__mini-text-title">Срок</a><br>
+                      <a class="services__mini-text-titler">30-120 мин</a>
+                      <button class="services__mini-button"><a
+                          class="services__mini-button-text">ЗАКАЗАТЬ</a>
+                        <img src="img/dropdown.webp">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="price">
+        <p class="price__text">Все цены указаны с учетом НДС. Стоимость
+          ремонта
+          указана на единичную услугу. Для получения коммерческого предложения
+          на постоянное обслуживание, оставьте заявку.</p>
+        <button class="price__button">
+          <a class="price__button-text">Получить коммерческое предложение</a>
+          <img src="img/Line.webp">
+        </button>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer__text">© 2019 CPS<br>
+        Разработано командой Apesong</a>
+      <a class="footer__text" href>Политика конфиденциальности</a>
+      <a class="footer__text">Информация, размещенная на данной странице, не
+        является публичной
+        офертой</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

@@ -1,0 +1,28 @@
+.price {
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 120px;
+  height: 137.45px;
+  width: 288px;
+  &__text {
+    font-family: "TT Lakes";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+  &__button {
+    padding: 0px;
+    padding-top: 16px;
+    text-align: left;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  &__button-text {
+    color: rgba(27, 28, 33, 1);
+    font-family: "TT Lakes";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+}

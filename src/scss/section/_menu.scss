@@ -1,0 +1,37 @@
+.menu {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-left: 16px;
+  margin-top: 32px;
+  &__slide {
+    height: 50px;
+  }
+}
+
+.title {
+  font-family: "TT Lakes";
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 24px;
+}
+
+.title__button {
+  margin-top: 16px;
+  border: 0px;
+  background-color: rgba(248, 248, 248, 1);
+  margin-bottom: 16px;
+  &-icon {
+    margin-right: 16px;
+  }
+}
+
+.more {
+  display: none;
+}
+
+// .title__icon {
+//   margin-right: 16px;
+// }

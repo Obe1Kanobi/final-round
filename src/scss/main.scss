@@ -3,16 +3,21 @@
 @import "vendor";
 @import "vars";
 @import "settings";
+@import "./section/service";
+@import "./section/menu";
+@import "./section/brands";
+@import "./section/brands-mini";
+@import "./section/price";
+@import "./section/footer";
+@import "./section/view";
+@import "./section/services";
+@import "./section/swiper";
+@import "./section/header";
 
-
-.header {
-  text-align: center;
-  & img {
-    width: 30%;
-  }
+main {
+  background-color: rgba(248, 248, 248, 1);
 }
 
-.welcome-title {
-  margin-top: 50px;
-  font-size: 6em;
+footer {
+  background-color: rgba(248, 248, 248, 1);
 }

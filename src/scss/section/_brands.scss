@@ -1,0 +1,114 @@
+.brands {
+  margin-top: 40px;
+  margin-left: 16px;
+  &__title {
+    font-family: "TT Lakes";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0, 2px;
+  }
+}
+
+.brands__container {
+  margin-top: 25px;
+  margin-bottom: 24px;
+  margin-left: 32px;
+}
+
+@media (max-width: 768px) {
+  .brands__container {
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: 24px;
+  }
+
+  .brands__container .brands__section--cont:nth-child(n + 7) {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .brands__container {
+    display: none;
+  }
+}
+
+.container {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 16px 0px;
+  margin-top: 18px;
+  margin-bottom: 46px;
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.brands__section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px 0px;
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media (max-width: 320px) {
+    display: none;
+  }
+}
+
+.brands__section--cont {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+  height: 72px;
+  border: 1px solid rgba(234, 234, 234, 1);
+  border-radius: 6px;
+  @media (max-width: 768px) {
+    width: 224px;
+  }
+}
+
+.brands__section--logo {
+  padding-left: 16px;
+}
+
+.brands__section--go {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 16px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  width: 133px;
+  margin-left: 33px;
+  gap: 0px 5px;
+  border-width: 0px;
+  background-color: rgba(248, 248, 248, 1);
+  @media (max-width: 768px) {
+    margin-left: 24px;
+    gap: 0px 6px;
+  }
+  @media (min-width: 0) and (max-width: 320px) {
+    display: none;
+  }
+}
+
+.buttontext {
+  font-family: "TT Lakes";
+  src: local("TT Lakes Medium"), local("TT-Lakes-Medium"),
+    url("/fonts/TTLakes-Medium.woff2") format("woff2"),
+    url("/fonts/TTLakes-Medium.woff") format("woff"),
+    url("/fonts/TTLakes-Medium.ttf") format("truetype");
+  font-size: 16px;
+  line-height: 24px;
+}

@@ -1,0 +1,13 @@
+.footer {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 16px 0px;
+  background-color: $background;
+  &__text {
+    display: grid;
+    text-align: center;
+    align-items: center;
+  }
+}
