@@ -1,0 +1,89 @@
+.dopmenu {
+  width: 305px;
+  background-color: $background;
+  z-index: 9999;
+  transition: left 0.7s ease-in-out;
+  @media (min-width: 769px) and (max-width: 1439px) {
+    display: none;
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    position: absolute;
+    left: -600px;
+    border-right: 20px solid transparent;
+    box-shadow: 0 0 50px 25px rgba(211, 213, 221, 1);
+  }
+  @media (min-width: 0px) and (max-width: 320px) {
+    width: 320px;
+    position: absolute;
+    left: -600px;
+    border-right: 20px solid transparent;
+    box-shadow: 0 0 50px 25px rgba(211, 213, 221, 1);
+  }
+  &__logo {
+    padding-bottom: 37.19px;
+    padding-left: 22px;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+  }
+  &__element {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 28.31px 0px;
+    padding-bottom: 241px;
+    padding-left: 24px;
+    &-text {
+      position: relative;
+    }
+    &-line {
+      position: absolute;
+      background: $line;
+      border-radius: 4px;
+      width: 4px;
+      height: 40px;
+      left: -25px;
+      top: -11px;
+    }
+  }
+  &__logo-element {
+    width: 97px;
+    height: 51px;
+    margin-right: 78.27px;
+  }
+  &__elements {
+    display: flex;
+    gap: 0px 16px;
+    padding-left: 19px;
+  }
+  &__email {
+    padding-top: 16.54px;
+    padding-left: 19px;
+  }
+  &__tel {
+    padding-top: 12.4px;
+    padding-left: 19px;
+  }
+  &__lang {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 87px;
+    padding-top: 40.82px;
+    padding-left: 21px;
+    gap: 0px 7px;
+  }
+  &__close {
+    display: none;
+    @media (max-width: 768px) {
+      display: flex;
+      width: 40px;
+      height: 40px;
+      margin-right: 16.73px;
+    }
+  }
+  &__search {
+    width: 40px;
+    height: 40px;
+  }
+}

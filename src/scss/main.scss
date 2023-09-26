@@ -3,16 +3,20 @@
 @import "vendor";
 @import "vars";
 @import "settings";
+@import "./section/main";
 @import "./section/service";
 @import "./section/menu";
 @import "./section/brands";
-@import "./section/brands-mini";
 @import "./section/price";
 @import "./section/footer";
 @import "./section/view";
 @import "./section/services";
 @import "./section/swiper";
 @import "./section/header";
+@import "./section/title";
+@import "./section/dopmenu";
+@import "./section/feedback";
+@import "./section/call";
 
 main {
   background-color: rgba(248, 248, 248, 1);

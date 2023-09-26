@@ -2,16 +2,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 88px;
-  width: 320px;
-  padding-top: 18.59px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 18.59px;
-  background-color: rgba(255, 255, 255, 1);
-  @media (max-width: 768px) {
-    width: 768px;
+  height: 40px;
+  margin-top: 42px;
+  max-width: 1120px;
+  @media (min-width: 520px) and (max-width: 768px) {
+    height: 88px;
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 0px;
+    margin-bottom: 24px;
   }
+  @media (min-width: 0px) and (max-width: 549px) {
+    height: 88px;
+    background-color: rgba(255, 255, 255, 1);
+    max-width: 549px;
+    margin-top: 0px;
+    margin-bottom: 24px;
+  }
+
   &__logo-icon {
     height: 40px;
     width: 40px;
@@ -35,26 +42,65 @@
 }
 
 .header__logo-cont {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 0px 20px;
+  @media (min-width: 320px) and (max-width: 768px) {
+    display: flex;
+    margin-left: 24px;
+  }
+  @media (min-width: 0px) and (max-width: 320px) {
+    display: flex;
+    margin-left: 16px;
+  }
+}
+
+.header__service {
+  @media (max-width: 768px) {
+    display: none;
+  }
+  @media (max-width: 320px) {
+    display: none;
+  }
+  &__title {
+    position: relative;
+    padding-left: 18px;
+  }
+  &__line {
+    background: $line;
+    border-radius: 4px;
+    width: 4px;
+    height: 40px;
+    position: absolute;
+    left: 4px;
+    top: 0px;
+  }
 }
 
 .header__element {
   display: flex;
   align-items: center;
-  margin-right: 16px;
-  padding-bottom: 16px;
-  padding-top: 16px;
-  @media (max-width: 768px) {
-    margin-right: 20px;
+  margin-left: 20px;
+  @media (max-width: 320px) {
+    margin-left: 16px;
+  }
+  &-text {
+    @media (max-width: 768px) {
+      display: none;
+    }
+    @media (max-width: 320px) {
+      display: none;
+    }
   }
   &-cont {
-    display: flex;
+    display: none;
     align-items: center;
-    gap: 0px 20px;
+    gap: 0px 16px;
     padding-right: 20px;
-    @media (max-width: 320px) {
+    @media (min-width: 489px) and (max-width: 768px) {
+      display: flex;
+    }
+    @media (min-width: 0px) and (max-width: 488px) {
       display: none;
     }
   }
@@ -63,15 +109,28 @@
     align-items: center;
     gap: 0px 20px;
     padding-left: 20px;
+    @media (max-width: 768px) {
+      margin-right: 24px;
+    }
+    @media (max-width: 320px) {
+      margin-right: 16px;
+    }
   }
   &-icon {
     height: 40px;
     width: 40px;
   }
   &-line {
+    display: none;
     background: #eaeaea;
     border-radius: 1px;
     width: 2px;
     height: 32px;
+    @media (max-width: 768px) {
+      display: block;
+    }
+    @media (min-width: 321px) and (max-width: 353px) {
+      display: none;
+    }
   }
 }

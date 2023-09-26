@@ -1,0 +1,119 @@
+.call {
+  max-width: 440px;
+  height: 940px;
+  background-color: $background;
+  z-index: 9999;
+  position: absolute;
+  display: none;
+  right: 0px !important;
+  padding: 0px 30px;
+  border-left: 1px solid rgba(217, 255, 245, 1);
+  transition: left 0.7s ease-in-out;
+  @media (min-width: 321px) and (max-width: 768px) {
+    display: none;
+  }
+  @media (min-width: 0px) and (max-width: 320px) {
+    width: 320px;
+    height: 676px;
+    position: absolute;
+    display: none;
+    padding: 0px 16px;
+  }
+  &__close {
+    position: absolute;
+    left: -60.5px;
+    @media (min-width: 0px) and (max-width: 320px) {
+      display: none;
+    }
+    &-img {
+      width: 40px;
+      height: 40px;
+      margin-top: 32px;
+    }
+    &-line {
+      position: absolute;
+      background: $line;
+      border-radius: 4px;
+      width: 4px;
+      height: 40px;
+      left: 58px;
+      top: 32px;
+    }
+  }
+  &__close-mini {
+    &-img {
+      width: 40px;
+      height: 40px;
+      margin-top: 24px;
+      @media (min-width: 321px) and (max-width: 1500px) {
+        display: none;
+      }
+    }
+  }
+  &__element {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0px;
+    &-title {
+      font-family: "TT Lakes";
+      font-size: 14px;
+      line-height: 32px;
+      letter-spacing: -0.6px;
+      margin-top: 40px;
+      &-mini-line {
+        position: absolute;
+        background: $line;
+        border-radius: 4px;
+        width: 4px;
+        height: 40px;
+        left: -1px;
+        top: 103px;
+        @media (min-width: 321px) and (max-width: 1600px) {
+          display: none;
+        }
+      }
+    }
+    &-elem {
+      font-family: "TT Lakes";
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      border: 1px solid rgba(234, 234, 234, 1);
+      border-radius: 8px;
+      max-width: 376px;
+      height: 48px;
+      box-sizing: border-box;
+      padding-left: 16px;
+      @media (min-width: 0px) and (max-width: 320px) {
+        max-width: 288px;
+      }
+    }
+  }
+  &__down {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+}
+
+.call__down-button {
+  width: 136px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: $button-background;
+  margin-left: 16px;
+  border: 0px;
+  position: absolute;
+  top: 103px;
+  left: 227px;
+  @media (min-width: 0px) and (max-width: 320px) {
+    position: absolute;
+    top: 114px;
+    left: 107px;
+  }
+  &-text {
+    color: $background;
+  }
+}

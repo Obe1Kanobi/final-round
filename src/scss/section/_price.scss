@@ -2,9 +2,20 @@
   margin-top: 16px;
   margin-left: 16px;
   margin-right: 16px;
-  margin-bottom: 120px;
-  height: 137.45px;
-  width: 288px;
+  margin-bottom: 69px;
+  max-width: 421px;
+  @media (min-width: 321px) and (max-width: 768px) {
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 0px;
+    margin-bottom: 47px;
+  }
+  @media (min-width: 768px) {
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+  }
   &__text {
     font-family: "TT Lakes";
     font-size: 14px;
@@ -16,7 +27,10 @@
     padding-top: 16px;
     text-align: left;
     border: 0px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(248, 248, 248, 1);
+    @media (min-width: 0px) and (max-width: 337px) {
+      max-width: 192px;
+    }
   }
   &__button-text {
     color: rgba(27, 28, 33, 1);
@@ -24,5 +38,6 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
+    padding-right: 9.4px;
   }
 }
